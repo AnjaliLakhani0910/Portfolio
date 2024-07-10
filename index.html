@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anjali's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="left"><a href="index.html" class="logoname">Anjali's Portfolio</a></div>
+            <div class="right">
+                <ul>
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="about.html">About</a>
+                    </li>
+                    <!-- <li>
+                        <a href="result.html">My Results</a>
+                    </li> -->
+                    <li>
+                        <a href="project.html">Projects</a>
+                    </li>
+                    <li>
+                        <a href="cv.html">CuruiculumVitae</a>
+                    </li>
+                    <li>
+                        <a href="contact.html">Contactme</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="firstsection">
+            <div class="leftsection">
+                Hii, My name is <span class="purple">Anjali Lakhani</span>
+                <div>And i am a</div>
+                <span id="element"></span>
+                <div class="buttons">
+                    <button class="btn" id="downloadResumeBtn">Download Resume</button>
+                    <button class="btn" id="visitLinkedinBtn">Visit Linkedin</button>
+                </div>
+
+            </div>
+            <div class="rightsection">
+                <img src="undraw_proud_coder_re_exuy.svg" alt="">
+            </div>
+
+        </section>
+      
+        <section class="secondsection">
+            <h1 style="text-align: center;">Work Experience</h1>
+            <div class="box">
+                <div class="square-container">
+                    <img class="image-top" src="meetanshi.jpg" alt="">
+                    <div class="square-content">
+                        <div class="vertical-title">
+                            Meetanshi <br>
+                            <span style="font-size: 1rem;">(29 June - 12 July)</span>
+                        </div>
+                        <div class="vertical-desc">
+                            I worked as a Web Development Intern at Meetanshi for 15 days where I performed several tasks on designing an attractive user-friendly website.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer">
+            <div class="footerfirst">
+                <h1>Anjali's Portfolio</h1>
+            </div>
+            <div class="footersecond">
+                <ul>
+                    <li> <a href="index.html">Home</a></li>
+                    <li><a href="contact.html">Contact Me</a></li>
+                </ul>
+            </div>
+            <div class="footerthird">
+                <ul>
+                    <li><a href="https://github.com/AnjaliLakhani0910" class="link">Github</a></li>
+                    <li><a href="https://learn.microsoft.com/en-gb/users/anjalilakhani-7420/transcript/7kn16uje6e5ryrx?tab=tab-learning-paths" class="href">Microsoft Student Learn</a></li>
+                </ul>
+            </div>
+            <div class="footerfourth">
+                <ul>
+                    <li><a href="https://www.linkedin.com/in/anjali-lakhani-1934b42a9/" class="href">Linkedin</a></li>
+                    <li><a href="https://www.hackerrank.com/profile/anjalilakhani201" class="href">HackerRank</a></li>
+                    
+                </ul>
+            </div>
+        </div>
+        <div class="footer-rights">
+            CopyRight &#169; anjalisportfolio.com | All Rights Reserved by Anjali Lakhani
+        </div>
+    </footer>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Web Developer', 'Web Designer', 'PHP Developer', 'Web Developer' ],
+            typeSpeed: 50,
+        });
+    </script>
+    <script>
+        document.getElementById('downloadResumeBtn').addEventListener('click', function() {
+            window.location.href = 'anjalicv.pdf';
+        });
+
+        document.getElementById('visitLinkedinBtn').addEventListener('click', function() {
+            window.location.href = 'https://www.linkedin.com/in/anjali-lakhani-1934b42a9/';
+        });
+    </script>
+</body>
+
+</html>
