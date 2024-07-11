@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anjali's Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+    </style>
+</head>
+
+<body class="bg-black text-white">
+    <header>
+        <nav class="flex justify-between items-center h-20 bg-opacity-60 bg-black px-5">
+            <div class="text-xl"><a href="index.html" class="logoname hover:text-indigo-300">Anjali's Portfolio</a>
+            </div>
+            <div class="hidden md:flex space-x-6">
+                <a href="index.html" class="hover:text-indigo-300">Home</a>
+                <a href="about.html" class="hover:text-indigo-300">About</a>
+                <a href="project.html" class="hover:text-indigo-300">Projects</a>
+                <a href="cv.html" class="hover:text-indigo-300">Curriculum Vitae</a>
+                <a href="contact.html" class="hover:text-indigo-300">Contact Me</a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="firstsection flex flex-col md:flex-row justify-around items-center my-20 mx-5">
+            <div class="leftsection text-2xl md:text-4xl my-5 md:w-1/2">
+                Hi, My name is <span class="text-yellow-400">Anjali Lakhani</span>
+                <div>And I am a</div>
+                <span id="element" class="text-yellow-400"></span>
+                <div class="buttons py-5">
+                    <button
+                        class="btn px-5 py-2 bg-teal-800 border-2 border-yellow-400 rounded text-white text-lg hover:bg-teal-600"
+                        id="downloadResumeBtn" style="width: 14rem;">Download Resume</button>
+                    <button
+                        class="btn px-5 py-2 bg-teal-800 border-2 border-yellow-400 rounded text-white text-lg hover:bg-teal-600 ml-3"
+                        id="visitLinkedinBtn" style="width: 14rem;">Visit Linkedin</button>
+                </div>
+            </div>
+            <div class="rightsection md:w-1/2">
+                <img src="undraw_proud_coder_re_exuy.svg" alt="coder image" class="max-h-80 my-5 mx-auto">
+            </div>
+        </section>
+
+        <section class="secondsection bg-black py-10">
+            <h1 class="text-center text-2xl">Work Experience</h1>
+            <div class="box flex flex-wrap justify-center items-center mt-10">
+                <div
+                    class="square-container w-80 h-80 m-5 border border-black p-3 bg-gray-800 flex flex-col justify-between">
+                    <div class="square-content text-center text-gray-200">
+                        <div class="vertical-title text-xl font-bold mt-2">Meetanshi</div>
+                        <div class="vertical-title text-sm">(29 June - 12 July)</div>
+                        <div class="vertical-desc mt-3 text-justify">I worked as a Web Development Intern at Meetanshi
+                            for 15 days where I performed several tasks on designing an attractive user-friendly
+                            website.</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="bg-opacity-65 bg-black py-10 text-center">
+        <div class="footer flex flex-wrap justify-around items-start px-5">
+            <div class="footerfirst w-60">
+                <h1 class="text-xl">Anjali's Portfolio</h1>
+            </div>
+            <div class="footersecond w-60">
+                <ul>
+                    <li><a href="index.html" class="hover:text-gray-300">Home</a></li>
+                    <li><a href="contact.html" class="hover:text-gray-300">Contact Me</a></li>
+                </ul>
+            </div>
+            <div class="footerthird w-60">
+                <ul>
+                    <li><a href="https://github.com/AnjaliLakhani0910" class="hover:text-gray-300">Github</a></li>
+                    <li><a href="https://learn.microsoft.com/en-gb/users/anjalilakhani-7420/transcript/7kn16uje6e5ryrx?tab=tab-learning-paths"
+                            class="hover:text-gray-300">Microsoft Student Learn</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Web Developer', 'Web Designer', 'PHP Developer', 'Web Developer' ],
+            typeSpeed: 50,
+        });
+    </script>
+    <script>
+        document.getElementById('downloadResumeBtn').addEventListener('click', function() {
+            window.location.href = 'anjalicv.pdf';
+        });
+
+        document.getElementById('visitLinkedinBtn').addEventListener('click', function() {
+            window.location.href = 'https://www.linkedin.com/in/anjali-lakhani-1934b42a9/';
+        });
+    </script>
+</body>
+</body>
+
+</html>
